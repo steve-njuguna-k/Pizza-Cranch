@@ -155,3 +155,10 @@ body {
     background-color: #dd0000;
     border-color: #dd0000;
 }
+
+.section-2{
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #dd0000;
+    color: #fff;
+}

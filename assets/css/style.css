@@ -213,3 +213,7 @@ p{
 .col-md-6{
     margin-bottom: 15px;
 }
+
+.order-total span{
+    color: #00d664;
+}

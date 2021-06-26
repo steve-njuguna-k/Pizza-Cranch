@@ -180,3 +180,14 @@ body {
     -moz-appearance: none;
     appearance: none;
 }
+
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    border-color: #dd0000;
+    background-color: #dd0000;
+}
+
+.form-check-input:checked {
+    background-color: #dd0000;
+    border-color: #dd0000;
+}

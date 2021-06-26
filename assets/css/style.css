@@ -143,3 +143,15 @@ body {
     background: #ffffff;
     padding: 10px 15px;
 }
+
+.btn{
+    border-radius: 0px;
+}
+.btn-dark{
+    background-color: #dd0000;
+    border-color: #dd0000;
+}
+.btn-dark:hover{
+    background-color: #dd0000;
+    border-color: #dd0000;
+}

@@ -35,3 +35,11 @@ function pizzaOrder(event){
 
     document.getElementById("orderTotal").innerHTML = pizzaOrder.add();
 }
+
+function Order(toppingChoices, pizzaSize, crustType, quantity, deliveryOption){
+    this.toppingChoices = toppingChoices;
+    this.pizzaSize = pizzaSize;
+    this.crustType = crustType;
+    this.quantity = quantity;
+    this.deliveryOption = deliveryOption;
+}

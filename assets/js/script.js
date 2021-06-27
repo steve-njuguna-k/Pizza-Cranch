@@ -43,3 +43,10 @@ function Order(toppingChoices, pizzaSize, crustType, quantity, deliveryOption){
     this.quantity = quantity;
     this.deliveryOption = deliveryOption;
 }
+
+Order.prototype.add = function(){
+    if(this.quantity <= 0){
+        alert("Order Quantity Must Be More Than 1! Please Try Again.")
+    }
+    
+}

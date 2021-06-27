@@ -194,21 +194,18 @@
                                     <div class="mb-3">
                                         <label for="email">Do You Want It Delivered?</label>
                                         <div class="d-block my-3">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="choice" id="Yes" value="Yes" required id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">Yes, PLease</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="choice" id="No" value="No" required id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">No, Thanks</label>
-                                            </div>
+                                            <select class="form-select form-select-md" aria-label="Default select example" id="deliveryOption" required>
+                                                <option selected disabled>Choose...</option>
+                                                <option value="Yes">Yes, PLease</option>
+                                                <option value="No">No, Thanks</option>
+                                            </select>
                                         </div>
                                         <div class="invalid-feedback">
                                           Please choose one of the options
                                         </div>
                                     </div>
 
-                                    <form id="billing-details" class="needs-validation" novalidate>
+                                    <form id="Yes" class="needs-validation" novalidate>
                                         <h5 class="mb-3 text-center">Billing address</h5>
                                         <div class="row">
                                         <div class="col-md-6 mb-3">
@@ -256,7 +253,7 @@
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <label for="state">County</label>
-                                            <select class="custom-select d-block w-100" id="state" required>
+                                            <select class="custom-select d-block w-100" id="county" required>
                                             <option value="">Choose...</option>
                                             <option>Nairobi</option>
                                             <option>Mombasa</option>
@@ -282,11 +279,11 @@
                                         <h4 class="mb-3">Payment Options</h4>
                                         <div class="d-block my-3">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="choice" id="Yes" value="Yes" required id="flexCheckDefault">
+                                                <input class="form-check-input" type="radio" name="choice" id="cashdelivery" value="cashdelivery" required id="flexCheckDefault">
                                                 <label class="form-check-label" for="flexCheckDefault">Cash On Delivery</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="choice" id="No" value="No" required id="flexCheckDefault">
+                                                <input class="form-check-input" type="radio" name="choice" id="mpesa" value="mpesa" required id="flexCheckDefault">
                                                 <label class="form-check-label" for="flexCheckDefault">Mpesa On Delivery</label>
                                             </div>
                                         </div>
@@ -300,7 +297,7 @@
                                     <ul class="list-group mb-3">
                                       <li class="list-group-item d-flex justify-content-between">
                                         <span><h4>Total (Ksh.)</h4></span>
-                                        <strong><h4 class="order-total"><span>3000</span></h4></strong>
+                                        <h4 class="text-center order-total"><span id="orderTotal">0.00</span></h4>
                                       </li>
                                     </ul>
                                 </div>
@@ -308,9 +305,9 @@
                         </div> 
                         <hr>
                         <div class="ibox-content d-grid gap-2">
-                            <button class="btn btn-dark pull-right btn-lg"><i class="fa fa fa-wallet"></i> Checkout</button>
+                            <button class="btn btn-dark pull-right btn-lg" id="checkoutTotal" onclick="pizzaOrder(event)"><i class="fa fa fa-wallet"></i> Checkout</button>
                         </div>
-                        <h4 class="text-center">Thank You For Your Purchase!!!</h4>   
+                        <h4 class="text-center" id="chcekout"></h4>  
                     </div>
                 </div>
             </div>

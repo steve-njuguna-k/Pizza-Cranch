@@ -48,5 +48,7 @@ Order.prototype.add = function(){
     if(this.quantity <= 0){
         alert("Order Quantity Must Be More Than 1! Please Try Again.")
     }
-    
+    else if (this.toppingChoices == '' || this.pizzaSize == '' || this.crustType == ''){
+        alert("You must choose a Topping, Pizza Size & Crust Type! Please Try Again.")
+    }
 }

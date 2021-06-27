@@ -84,34 +84,80 @@
                             </div>
                             <div class="col-md-6">
                                 <td width="600"class="desc">
-                                    <h3>
-                                    <div class="text-navy text-center">
-                                        Chicken & Beef Pepperoni
+                                    <h6 class="mb-3">Pizza Toppings</h6>
+                                    <form>
+                                        <select class="form-select form-select-sm" aria-label="Default select example" id="toppingChoices">
+                                            <option selected disabled>Choose...</option>
+                                            <option value="1">Chicken & Beef Pepperoni</option>
+                                            <option value="2">Chicken Hawaiian</option>
+                                            <option value="3">Chicken Macon BBQ</option>
+                                            <option value="4">Meat Deluxe</option>
+                                        </select>
+                                    </form>
+
+                                    <hr>
+                                    <div class="desc" id="1">
+                                        <p class="text-center">
+                                            Enjoy this cheesy pizza topped with beef mixture, pepperoni and mushrooms – 
+                                            delicious dinner ready in 15 minutes.
+                                        </p>
+                                        <dl class="small m-b-none text-center">
+                                            <dt>Ingredients</dt>
+                                            <dd>Succulent BBQ chicken, beef pepperoni, mushroom, green pepper</dd>
+                                        </dl>
                                     </div>
-                                    </h3>
-                                    <p class="text-center">
-                                        Enjoy this cheesy pizza topped with beef mixture, pepperoni and mushrooms – 
-                                        delicious dinner ready in 15 minutes.
-                                    </p>
-                                    <dl class="small m-b-none text-center">
-                                        <dt>Ingredients</dt>
-                                        <dd>Succulent BBQ chicken, beef pepperoni, mushroom, green pepper</dd>
-                                    </dl>
+
+                                    <div class="desc" id="2">
+                                        <p class="text-center">
+                                            Such a tasty Hawaiian BBQ Chicken Pizza recipe! Pizza 
+                                            crust is layered with smokey bbq sauce, chicken pieces, 
+                                            creamy mozzarella, sweet pineapple, and flavorful red 
+                                            onion and cilantro.
+                                        </p>
+                                        <dl class="small m-b-none text-center">
+                                            <dt>Ingredients</dt>
+                                            <dd>Succulent BBQ chicken, pineapple</dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="desc" id="3">
+                                        <p class="text-center">
+                                            Switch Up Pizza Night With This Well-Made BBQ Chicken Pizza 
+                                            Recipe! With Barbecue Sauce, Mozzarella Cheese, Chicken, 
+                                            Bacon, And Cilantro, This Barbecue Chicken Pizza Will Be A 
+                                            New Family Favorite. Best Of All, It’s Made In Less Than 20 
+                                            Minutes!
+                                        </p>
+                                        <dl class="small m-b-none text-center">
+                                            <dt>Ingredients</dt>
+                                            <dd>Succulent bbq chicken, macon, sweetcorn, onion</dd>
+                                        </dl>
+                                    </div>
+
+                                    <div class="desc" id="4">
+                                        <p class="text-center">
+                                            A flavourful mix of meat and vegetables, this classic pie will be your go-to for pizza night. 
+                                        </p>
+                                        <dl class="small m-b-none text-center">
+                                            <dt>Ingredients</dt>
+                                            <dd>Beef pepperoni, BBQ steak, macon, sandwich beef</dd>
+                                        </dl>
+                                    </div>
 
                                     <div class="m-t-sm">
                                         <center>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <select class="form-select form-select-sm" aria-label="Default select example">
+                                                    <select class="form-select form-select-sm" aria-label="Default select example" id="pizzaSize">
                                                         <option selected disabled>Pizza Size</option>
                                                         <option value="1">Regular</option>
                                                         <option value="2">Medium</option>
                                                         <option value="3">Large</option>
-                                                        <option value="3">Mega</option>
+                                                        <option value="4">Mega</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <select class="form-select form-select-sm" aria-label="Default select example">
+                                                    <select class="form-select form-select-sm" aria-label="Default select example" id="crustType">
                                                         <option selected disabled>Crust Type</option>
                                                         <option value="1">Crispy </option>
                                                         <option value="2">Stuffed </option>
@@ -125,241 +171,22 @@
                             </div>
                             <div class="col-md-1">
                                 <td>
-                                    <h4 class="text-center">0.00</h4>
+                                    <h4 class="text-center" id="pbq">0.00</h4>
                                 </td>
                             </div>
                             <div class="col-md-1">
                                 <td width="100">
-                                    <input type="number" class="form-control" placeholder="0">
+                                    <input type="number" class="form-control" placeholder="0" id="quantity">
                                 </td>
                             </div>
                             <div class="col-md-2">
                                 <td width="150">
-                                    <h4 class="text-center">
+                                    <h4 class="text-center" id="paq">
                                         Ksh. 0.00
                                     </h4>
                                 </td>
                             </div>
                         </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <td width="90">
-                                    <center>
-                                    <div class="cart-product-imitation">
-                                        <img src="https://www.pngkey.com/png/full/859-8596345_bbq-chicken-pepperoni-and-beef-pizza.png" height="100px" width="100px">
-                                    </div>
-                                    </center>
-                                </td>
-                            </div>
-                            <div class="col-md-6">
-                                <td width="600"class="desc">
-                                    <h3>
-                                    <div class="text-navy text-center">
-                                        Chicken Hawaiian
-                                    </div>
-                                    </h3>
-                                    <p class="text-center">
-                                        Such a tasty Hawaiian BBQ Chicken Pizza recipe! Pizza 
-                                        crust is layered with smokey bbq sauce, chicken pieces, 
-                                        creamy mozzarella, sweet pineapple, and flavorful red 
-                                        onion and cilantro.
-                                    </p>
-                                    <dl class="small m-b-none text-center">
-                                        <dt>Ingredients</dt>
-                                        <dd>Succulent BBQ chicken, pineapple</dd>
-                                    </dl>
-
-                                    <div class="m-t-sm">
-                                        <center>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <select class="form-select form-select-sm" aria-label="Default select example">
-                                                    <option selected disabled>Pizza Size</option>
-                                                    <option value="1">Regular</option>
-                                                    <option value="2">Medium</option>
-                                                    <option value="3">Large</option>
-                                                    <option value="3">Mega</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <select class="form-select form-select-sm" aria-label="Default select example">
-                                                    <option selected disabled>Crust Type</option>
-                                                    <option value="1">Crispy </option>
-                                                    <option value="2">Stuffed </option>
-                                                    <option value="3">Gluten-free</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        </center>
-                                    </div>
-                                </td>
-                            </div>
-                            <div class="col-md-1">
-                                <td>
-                                    <h4 class="text-center">0.00</h4>
-                                </td>
-                            </div>
-                            <div class="col-md-1">
-                                <td width="100">
-                                    <input type="number" class="form-control" placeholder="0">
-                                </td>
-                            </div>
-                            <div class="col-md-2">
-                                <td width="150">
-                                    <h4 class="text-center">
-                                        Ksh. 0.00
-                                    </h4>
-                                </td>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <td width="90">
-                                    <center>
-                                    <div class="cart-product-imitation">
-                                        <img src="https://www.pngkey.com/png/full/859-8596345_bbq-chicken-pepperoni-and-beef-pizza.png" height="100px" width="100px">
-                                    </div>
-                                    </center>
-                                </td>
-                            </div>
-                            <div class="col-md-6">
-                                <td width="600"class="desc">
-                                    <h3>
-                                    <div class="text-navy text-center">
-                                        Chicken Macon BBQ
-                                    </div>
-                                    </h3>
-                                    <p class="text-center">
-                                        Switch Up Pizza Night With This Well-Made BBQ Chicken Pizza 
-                                        Recipe! With Barbecue Sauce, Mozzarella Cheese, Chicken, 
-                                        Bacon, And Cilantro, This Barbecue Chicken Pizza Will Be A 
-                                        New Family Favorite. Best Of All, It’s Made In Less Than 20 
-                                        Minutes!
-                                    </p>
-                                    <dl class="small m-b-none text-center">
-                                        <dt>Ingredients</dt>
-                                        <dd>Succulent bbq chicken, macon, sweetcorn, onion</dd>
-                                    </dl>
-
-                                    <div class="m-t-sm">
-                                        <center>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <select class="form-select form-select-sm" aria-label="Default select example">
-                                                    <option selected disabled>Pizza Size</option>
-                                                    <option value="1">Regular</option>
-                                                    <option value="2">Medium</option>
-                                                    <option value="3">Large</option>
-                                                    <option value="3">Mega</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <select class="form-select form-select-sm" aria-label="Default select example">
-                                                    <option selected disabled>Crust Type</option>
-                                                    <option value="1">Crispy </option>
-                                                    <option value="2">Stuffed </option>
-                                                    <option value="3">Gluten-free</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        </center>
-                                    </div>
-                                </td>
-                            </div>
-                            <div class="col-md-1">
-                                <td>
-                                    <h4 class="text-center">0.00</h4>
-                                </td>
-                            </div>
-                            <div class="col-md-1">
-                                <td width="100">
-                                    <input type="number" class="form-control" placeholder="0">
-                                </td>
-                            </div>
-                            <div class="col-md-2">
-                                <td width="150">
-                                    <h4 class="text-center">
-                                        Ksh. 0.00
-                                    </h4>
-                                </td>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <td width="90">
-                                    <center>
-                                    <div class="cart-product-imitation">
-                                        <img src="https://www.pngkey.com/png/full/859-8596345_bbq-chicken-pepperoni-and-beef-pizza.png" height="100px" width="100px">
-                                    </div>
-                                    </center>
-                                </td>
-                            </div>
-                            <div class="col-md-6">
-                                <td width="600"class="desc">
-                                    <h3>
-                                    <div class="text-navy text-center">
-                                        Meat Deluxe
-                                    </div>
-                                    </h3>
-                                    <p class="text-center">
-                                        A flavourful mix of meat and vegetables, this classic pie will be your go-to for pizza night. 
-                                    </p>
-                                    <dl class="small m-b-none text-center">
-                                        <dt>Ingredients</dt>
-                                        <dd>Beef pepperoni, BBQ steak, macon, sandwich beef</dd>
-                                    </dl>
-
-                                    <div class="m-t-sm">
-                                        <center>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <select class="form-select form-select-sm" aria-label="Default select example">
-                                                    <option selected disabled>Pizza Size</option>
-                                                    <option value="1">Regular</option>
-                                                    <option value="2">Medium</option>
-                                                    <option value="3">Large</option>
-                                                    <option value="3">Mega</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <select class="form-select form-select-sm" aria-label="Default select example">
-                                                    <option selected disabled>Crust Type</option>
-                                                    <option value="1">Crispy </option>
-                                                    <option value="2">Stuffed </option>
-                                                    <option value="3">Gluten-free</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        </center>
-                                    </div>
-                                </td>
-                            </div>
-                            <div class="col-md-1">
-                                <td>
-                                    <h4 class="text-center">0.00</h4>
-                                </td>
-                            </div>
-                            <div class="col-md-1">
-                                <td width="100">
-                                    <input type="number" class="form-control" placeholder="0">
-                                </td>
-                            </div>
-                            <div class="col-md-2">
-                                <td width="150">
-                                    <h4 class="text-center">
-                                        Ksh. 0.00
-                                    </h4>
-                                </td>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="ibox-content d-grid gap-2">
-                            <button class="btn btn-dark pull-right btn-lg"><i class="fa fa fa-wallet"></i> Place My Order</button>
-                        </div>
-                        <h4 class="text-center order-total">Your Order Total: <span>Ksh. 3000</span></h4>
                         <hr>
                         <div class="ibox-content d-grid gap-2">
                             <div class="row">

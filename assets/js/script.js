@@ -51,4 +51,248 @@ Order.prototype.add = function(){
     else if (this.toppingChoices == '' || this.pizzaSize == '' || this.crustType == ''){
         alert("You must choose a Topping, Pizza Size & Crust Type! Please Try Again.")
     }
+    //Chicken & Beef Pepperoni (Crispy Crust)
+    if (this.toppingChoices == 1 && this.pizzaSize == 1 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[0];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[0]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[0];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[0]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        } 
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 2 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[1];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[1]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[1];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[1]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 3 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[2];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[2]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[2];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[2]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal; 
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 4 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[3];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[3]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + chickenBeefPepperoniPrices[3];
+            let total = (crispyPrice + chickenBeefPepperoniPrices[3]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    //Chicken & Beef Pepperoni (Stuffed Crust)
+    if (this.toppingChoices == 1 && this.pizzaSize == 1 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[0];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[0]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[0];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[0]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 2 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[1];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[1]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[1];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[1]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 3 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[2];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[2]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[2];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[2]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 4 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[3];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[3]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + chickenBeefPepperoniPrices[3];
+            let total = (stuffedPrice + chickenBeefPepperoniPrices[3]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    //Chicken & Beef Pepperoni (Gluten Free Crust)
+    if (this.toppingChoices == 1 && this.pizzaSize == 1 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[0];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[0]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[0];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[0]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 2 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[1];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[1]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[1];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[1]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 3 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[2];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[2]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[2];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[2]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 1 && this.pizzaSize == 4 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[3];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[3]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + chickenBeefPepperoniPrices[3];
+            let total = (glutenFreePrice + chickenBeefPepperoniPrices[3]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    
 }

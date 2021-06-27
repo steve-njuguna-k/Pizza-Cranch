@@ -785,5 +785,250 @@ Order.prototype.add = function(){
             return orderTotal;
         }
     }
-    
+
+    //Meat Deluxe (Crispy Crust)
+    if (this.toppingChoices == 4 && this.pizzaSize == 1 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + meatDeluxePrices[0];
+            let total = (crispyPrice + meatDeluxePrices[0]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + meatDeluxePrices[0];
+            let total = (crispyPrice + meatDeluxePrices[0]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 2 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + meatDeluxePrices[1];
+            let total = (crispyPrice + meatDeluxePrices[1]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + meatDeluxePrices[1];
+            let total = (crispyPrice + meatDeluxePrices[1]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 3 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + meatDeluxePrices[2];
+            let total = (crispyPrice + meatDeluxePrices[2]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + meatDeluxePrices[2];
+            let total = (crispyPrice + meatDeluxePrices[2]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 4 && this.crustType == 1){
+        if(this.deliveryOption == "No"){
+            let pretotal= crispyPrice + meatDeluxePrices[3];
+            let total = (crispyPrice + meatDeluxePrices[3]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= crispyPrice + meatDeluxePrices[3];
+            let total = (crispyPrice + meatDeluxePrices[3]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+
+    //Meat Deluxe (Stuffed Crust)
+    if (this.toppingChoices == 4 && this.pizzaSize == 1 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + meatDeluxePrices[0];
+            let total = (stuffedPrice + meatDeluxePrices[0]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + meatDeluxePrices[0];
+            let total = (stuffedPrice + meatDeluxePrices[0]) * this.quantity;
+            let orderTotal = total + deliveryTransport; 
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal; 
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 2 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + meatDeluxePrices[1];
+            let total = (stuffedPrice + meatDeluxePrices[1]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + meatDeluxePrices[1];
+            let total = (stuffedPrice + meatDeluxePrices[1]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 3 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + meatDeluxePrices[2];
+            let total = (stuffedPrice + meatDeluxePrices[2]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + meatDeluxePrices[2];
+            let total = (stuffedPrice + meatDeluxePrices[2]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 4 && this.crustType == 2){
+        if(this.deliveryOption == "No"){
+            let pretotal= stuffedPrice + meatDeluxePrices[3];
+            let total = (stuffedPrice + meatDeluxePrices[3]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= stuffedPrice + meatDeluxePrices[3];
+            let total = (stuffedPrice + meatDeluxePrices[3]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+
+    //Meat Deluxe (Gluten Free Crust)
+    if (this.toppingChoices == 4 && this.pizzaSize == 1 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + meatDeluxePrices[0];
+            let total = (glutenFreePrice + meatDeluxePrices[0]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + meatDeluxePrices[0];
+            let total = (glutenFreePrice + meatDeluxePrices[0]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 2 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + meatDeluxePrices[1];
+            let total = (glutenFreePrice + meatDeluxePrices[1]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + meatDeluxePrices[1];
+            let total = (glutenFreePrice + meatDeluxePrices[1]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 3 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + meatDeluxePrices[2];
+            let total = (glutenFreePrice + meatDeluxePrices[2]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + meatDeluxePrices[2];
+            let total = (glutenFreePrice + meatDeluxePrices[2]) * this.quantity;
+            let orderTotal = total + deliveryTransport;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
+    if (this.toppingChoices == 4 && this.pizzaSize == 4 && this.crustType == 3){
+        if(this.deliveryOption == "No"){
+            let pretotal= glutenFreePrice + meatDeluxePrices[3];
+            let total = (glutenFreePrice + meatDeluxePrices[3]) * this.quantity;
+            let orderTotal = total;
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+        else{
+            let pretotal= glutenFreePrice + meatDeluxePrices[3];
+            let total = (glutenFreePrice + meatDeluxePrices[3]) * this.quantity;
+            let orderTotal = total + deliveryTransport; 
+            document.getElementById("pbq").innerHTML = pretotal;
+            document.getElementById("paq").innerHTML = "Ksh. " + total;
+            alert("Grand Total: Ksh. " + orderTotal + "\n" + "Thank You For Your Purchase!!!");
+            return orderTotal;
+        }
+    }
 }

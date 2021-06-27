@@ -20,3 +20,18 @@ let crispyPrice = 200;
 let stuffedPrice = 350;
 let glutenFreePrice = 500;
 let deliveryTransport = 500;
+
+//Pizza Order
+function pizzaOrder(event){
+    event.preventDefault();
+
+    let pizzaOrder = new Order(
+        document.getElementById("toppingChoices").value,
+        document.getElementById("pizzaSize").value,
+        document.getElementById("crustType").value,
+        document.getElementById("quantity").value,
+        document.getElementById("deliveryOption").value,
+    );
+
+    document.getElementById("orderTotal").innerHTML = pizzaOrder.add();
+}
